@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Lakers';
+  font-style: normal;
+  font-weight: 550;
+  src: url(../fonts/LakersRegular.otf);
+}
+@font-face {
+  font-family: 'LakersBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/LakersTextured.otf);
+}
+@font-face {
+  font-family: 'Moontells';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Moontells.ttf);
+}
+* { 
+	padding: 0; 
+	margin: 0;
+ }
+body{
+	width:100;
+	min-height:640px;
+	background:url('../slike/source2.1.gif') center;
+	 background-size:cover;
+} 
+canvas { 
+	background: #eee;
+	display: block;
+	margin: 0 auto;
+ }
+ #naslov{
+	color:#0095DD;
+	font-size:7em;
+	height:150px;
+	line-height:150px;
+	width:420px;
+	position:absolute;
+	top:20%;
+	left:40%;
+	text-align:center;
+	font-family: "Moontells";
+ }
+ #zgornji{
+	 margin: 12% auto 0;
+	 opacity:0;
+	 z-index:-1;
+ }
+ #spodnji{
+	opacity:0;
+	z-index:-1;
+ }
+  #myCanvas{
+	margin:5% auto 0;
+ }
+ #myCanvas2{
+	/*margin:10% auto;*/	
+ }
+  #meni1{
+	 width:10%;
+	 height:5%;
+	 line-height:50px;
+	 text-align:center;
+	 cursor:pointer;
+	 box-shadow: 5px 5px #0075ad;
+	 background:#0095DD;
+	 color:white;
+	 position:absolute;
+	 left:45%;
+	 top:40%;
+	 z-index:2;
+	 font-family: 'Lakers';
+	 font-size: 2em;
+	 transition:2s;
+ }
+ #meni1:hover{
+	 box-shadow: none;
+	 
+ }
+  #meni2{
+	 width:15%;
+	 height:5%;
+	 line-height:50px;
+	 text-align:center;
+	 background:#0095DD;
+	 box-shadow: 5px 5px #0075ad;
+	 cursor:pointer;
+	 color:white;
+	 position:absolute;
+	 left:42.5%;
+	 top:50%;
+	 z-index:2;
+	 font-family: 'Lakers';
+	 font-size: 2em;
+	 transition:2s;
+ }
+ #meni2:hover{
+	 box-shadow: none;
+	 
+ }
+ #bton{
+	 width:10%;
+	 height:5%;
+	 line-height:50px;
+	 text-align:center;
+	 background:#0095DD;
+	 color:white;
+	 position:absolute;
+	 left:20%;
+	 top:25%;
+	 z-index:-1;
+	 opacity:0;
+	 font-family: 'Lakers';
+	 font-size: 2em;
+	 cursor:pointer;
+ }
+ #bton2{
+	 width:10%;
+	 height:5%;
+	 line-height:50px;
+	 text-align:center;
+	 background:#0095DD;
+	 color:white;
+	 position:absolute;
+	 left:20%;
+	 top:35%;
+	 z-index:-1;
+	 opacity:0;
+	 font-family: 'Lakers';
+	 cursor:pointer;
+	 font-size: 2em;
+ }
+ #bton3{
+	 width:10%;
+	 height:5%;
+	 line-height:50px;
+	 text-align:center;
+	 background:#0095DD;
+	 color:white;
+	 position:absolute;
+	 cursor:pointer;
+	 left:20%;
+	 top:45%;
+	 z-index:-1;
+	 opacity:0;
+	 font-family: 'Lakers';
+	 font-size: 2em;
+ }
+  #bton4{
+	 width:10%;
+	 height:5%;
+	 line-height:50px;
+	 text-align:center;
+	 background:#0095DD;
+	 cursor:pointer;
+	 color:white;
+	 position:absolute;
+	 left:20%;
+	 top:55%;
+	 z-index:-1;
+	 opacity:0;
+	 font-family: 'Lakers';
+	 font-size: 2em;
+ }
+ #nazaj{
+	 width:10%;
+	 height:5%;
+	 position:absolute;
+	 bottom:15%;
+	 left:20%;
+	 line-height:50px;
+	 text-align:center;
+	 background:#0095DD;
+	 cursor:pointer;
+	 color:white;
+	 z-index:-1;
+	 opacity:0;
+	 font-family: 'Lakers';
+	 font-size: 2em;
+ }
+ .classname {
+  -webkit-animation-name: cssAnimation;
+  -webkit-animation-duration:3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation {
+  from {
+    opacity:1;
+  }
+  to {
+    opacity:0;
+	z-index:-1;
+  }
+}
+ .classname1 {
+  -webkit-animation-name: cssAnimation1;
+  -webkit-animation-duration:3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation1 {
+  from {
+    opacity:0;
+	z-index:-1;
+  }
+  to {
+    opacity:1;
+	z-index:1;
+  }
+}
+ .classname2 {
+  -webkit-animation-name: cssAnimation2;
+  -webkit-animation-duration:3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation2 {
+  from {
+    opacity:0;
+	z-index:-1;
+  }
+  to {
+    
+	opacity:1;
+	z-index:1;
+  }
+}
+ .classname3 {
+  -webkit-animation-name: cssAnimation3;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation3 {
+  from {
+    opacity:1;
+	z-index:1;
+  }
+  to {
+	opacity:0;
+	z-index:-1;
+  }
+}
+.premik {
+  -webkit-animation-name: premik;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes premik {
+  from {
+    top:20%;
+  }
+  to {
+    top:5%
+  }
+}
+
+.premik2 {
+  -webkit-animation-name: premik2;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes premik2 {
+  from {
+    top:5%;
+  }
+  to {
+    top:20%
+  }
+}
+
+
+
+ 
+ 
