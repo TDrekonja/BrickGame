@@ -289,6 +289,7 @@ function start4(){
                     /*document.location.reload();*/
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					throw new Error("Stopping the function!");
                 }
                 else {
@@ -319,6 +320,7 @@ function start4(){
                    /*document.location.reload();*/
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					throw new Error("Stopping the function!");
                 }
                 else {

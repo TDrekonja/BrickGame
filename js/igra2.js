@@ -292,6 +292,7 @@ function start2(){
 					zacelo=0;
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					return;
 					throw new Error("Stopping the function!");
                 }
@@ -323,6 +324,7 @@ function start2(){
 					zacelo=0;
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					return;		
 					throw new Error("Stopping the function!");
                 }
@@ -369,6 +371,7 @@ function aniM2(){
 	console.log('kmet');
 	document.getElementById('bton2').className ='classname';
 	document.getElementById('bton3').className ='classname2';
+	sessionStorage.setItem("level", "bton3");
 	zakleni=0;
 	/*setTimeout(start3(),300);*/
 }

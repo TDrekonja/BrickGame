@@ -293,6 +293,7 @@ function start3(){
                     /*document.location.reload();*/
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					throw new Error("Stopping the function!");
                 }
                 else {
@@ -323,6 +324,7 @@ function start3(){
                     /*document.location.reload();*/
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					throw new Error("Stopping the function!");
                 }
                 else {
@@ -367,5 +369,6 @@ function start3(){
 function aniM3(){
 	document.getElementById('bton3').className ='classname';
 	document.getElementById('bton4').className ='classname2';
+	sessionStorage.setItem("level", "bton4");
 	zakleni=0;
 }

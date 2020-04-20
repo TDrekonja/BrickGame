@@ -57,7 +57,6 @@ function start(){
 	var zmaga=0;
 	
 	
-	
 
     var bricks = [];
     for(var c=0; c<brickColumnCount; c++) {
@@ -133,6 +132,7 @@ function start(){
 									aniM();
 								konc=true;
 								zacetk=false;	
+								sessionStorage.setItem("level", "bton2");
 								return;
 								throw new Error("Stopping the function!");
 								/*document.getElementById("spodnji").style.transform=" scaleX(-1)";
@@ -164,6 +164,7 @@ function start(){
 									aniM();
 								konc=true;
 								zacetk=false;
+								sessionStorage.setItem("level", "bton2");
 								return;
 								throw new Error("Stopping the function!");
 								/*document.getElementById("spodnji").style.transform=" scaleX(-1)";
@@ -304,6 +305,7 @@ function start(){
 					zacelo=0;
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					return;
 					throw new Error("Stopping the function!");
                 }
@@ -335,6 +337,7 @@ function start(){
                     /*document.location.reload();*/
 					konc=true;
 					zacetk=false;
+					zakleni=0;
 					return;		
 					throw new Error("Stopping the function!");
                 }
@@ -383,6 +386,7 @@ function aniM(){
 	document.getElementById('bton').className ='classname';
 	document.getElementById('bton2').className ='classname2';
 	zakleni=0;
+	sessionStorage.setItem("level", "bton2");
 }
 function togglePause()
 {

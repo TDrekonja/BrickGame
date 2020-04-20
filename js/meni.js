@@ -1,5 +1,6 @@
 var lc=true;
 var zakleni=0;
+var level ='bton';
 function ani(){
     document.getElementById('meni1').className ='classname';
 	document.getElementById('meni2').className ='classname';
@@ -17,7 +18,9 @@ function ani2(){
 	document.getElementById('meni2').className ='classname';
 	document.getElementById('spodnji').className ='classname2';
 	document.getElementById('zgornji').className ='classname2';
-	document.getElementById('bton').className ='classname2';
+	if(level!="bton")
+		level = sessionStorage.getItem("level");
+	document.getElementById(level).className ='classname2';
 	document.getElementById('nazaj').className ='classname2';
 	lc=false;
 }
@@ -31,7 +34,7 @@ function aniP(){
 	document.getElementById('zgornji').className ='classname2';
 }
 function aniN(){
-	if(zakleni==0){
+	if(zakleni==0){	
     document.getElementById('meni1').className ='classname1';
 	document.getElementById('meni2').className ='classname1';
 	document.getElementById('bton').className ='classname3';
