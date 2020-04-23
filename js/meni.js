@@ -17,9 +17,7 @@ function ani2(){
 	document.getElementById('meni1').className ='classname';
 	document.getElementById('meni2').className ='classname';
 	document.getElementById('spodnji').className ='classname2';
-	document.getElementById('zgornji').className ='classname2';
-	if(level!="bton")
-		level = sessionStorage.getItem("level");
+	document.getElementById('zgornji').className ='classname2';		
 	document.getElementById(level).className ='classname2';
 	document.getElementById('nazaj').className ='classname2';
 	lc=false;
@@ -45,5 +43,6 @@ function aniN(){
 	document.getElementById('zgornji').className ='classname3';
 	document.getElementById('nazaj').className ='classname3';
 	document.getElementById('naslov').className ='premik2';
+	level = sessionStorage.getItem("level");
 	}
 }
